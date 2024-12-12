@@ -1,0 +1,235 @@
+.container {
+    display: flex;
+    margin-top: 3rem;
+    gap: 30px; /* Increased gap for better separation */
+    padding: 0 20px; /* Added padding to the sides */
+}
+
+.left {
+    flex: 2.5; /* Slightly reduce the width of the left section */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between image and details */
+}
+
+.left img {
+    width: 100%;
+    height: 600px; /* Fixed height for consistent display */
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    height:600px;
+    gap: 20px;
+    padding: 20px; /* Padding around details for better spacing */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px; /* Match image styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Same shadow for consistency */
+}
+
+.title {
+    font-weight: 700; /* Bolder weight for stronger emphasis */
+    font-size: 26px; /* Slightly larger for better readability */
+    color: #111; /* Darker shade for better contrast */
+    margin-bottom: 10px; /* Added space below title for separation */
+}
+
+.priceAndOwner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #555; /* Darker color for a more polished look */
+    margin-bottom: 15px; /* Added margin for spacing */
+}
+
+.price {
+    font-weight: 700; /* Increased boldness */
+    font-size: 24px; /* Larger font size for emphasis */
+    color: #000; /* Black for maximum contrast */
+}
+
+.owner {
+    height: 45px; /* Slightly increased size for prominence */
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc; /* Softer border color for a more refined look */
+}
+
+.moreDetails {
+    display: flex;
+    gap: 15px; /* Reduced gap for tighter grouping */
+    color: #666; /* Darker shade for consistency */
+    font-size: 16px;
+    margin-bottom: 20px; /* Added margin to separate from other elements */
+}
+
+.moreDetails span {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Slightly increased gap for clarity */
+}
+
+.typeAndContinent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    margin-bottom: 1rem; /* Increased bottom margin for better spacing */
+}
+
+.desc {
+    font-size: 1rem; /* Use relative size for better scalability */
+    line-height: 1.5; /* Improved line spacing for readability */
+    color: #444; /* Consistent text color */
+    margin-bottom: 10px; /* Added margin for separation */
+}
+
+.typeAndContinent > div > span {
+    background-color: #007bff; /* Updated to a more vibrant blue */
+ /* Updated to a richer blue */
+    color: #fff;
+    padding: 0.5rem 1.2rem; /* Adjusted padding for a better look */
+    border-radius: 10px; /* Slightly smaller radius for a sleeker style */
+    margin-left: 0.3rem; /* Adjusted margin for balance */
+}
+
+.contactOwners {
+    width: 180px; /* Slightly increased width for better balance */
+    padding: 14px; /* Increased padding for a more substantial feel */
+    background-color: #007bff; /* Updated to a more vibrant blue */
+    color: #fff; /* Consistent white text color */
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px; /* Increased radius for a smoother look */
+    margin-top: 20px; /* Increased margin for better separation */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added scale effect on hover */
+}
+
+.contactOwners:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.03); /* Slight scaling effect on hover */
+}
+
+.contactOwners:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.right {
+    flex: 1.0; /* Reduced flex value for the right section */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Equal spacing between calculator and chatbot */
+    justify-content: flex-start;
+    align-items: stretch; /* Ensure the components stretch to full width */
+}
+
+.mortgageCalculator {
+    padding: 20px; /* Add padding for spacing inside the calculator */
+    background-color: #f9f9f9; /* Match background with details section */
+    border-radius: 10px; /* Rounded corners for a consistent look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+
+
+.contactForms {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactFormWrapper {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+}
+
+.contactFormWrapper h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contactFormWrapper form input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contactFormWrapper form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactFormWrapper form button:hover {
+    background-color: #007bff; /* Updated to a more vibrant blue */
+   
+}
+
+.removeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+.messagePopup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.chatbotIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; /* Updated to a more vibrant blue */
+    
+    color: white;
+    border-radius: 70%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.chatbotIcon:hover {
+    background-color: #007bff; /* Updated to a more vibrant blue */
+ 
+}
+.closeChatbotIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #333;
+    font-size: 24px;
+}
